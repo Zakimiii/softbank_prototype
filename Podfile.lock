@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.7.3)
+  - DynamicBlurView (2.0.2)
+  - Eureka (4.1.1)
+  - FSPagerView (0.7.2)
+  - Kingfisher (4.6.4)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - RichEditorView (5.0.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SwiftDate (4.5.1)
+  - SwiftLint (0.25.1)
+  - SwiftyJSON (4.0.0)
+  - TabPageViewController (0.3.2)
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.0)
+  - Eureka (~> 4.1.1)
+  - FSPagerView (~> 0.7.1)
+  - Kingfisher (~> 4.6.3)
+  - PopupDialog (~> 0.7.1)
+  - R.swift (~> 4.0.0)
+  - RichEditorView
+  - RxCocoa (~> 4.1.2)
+  - RxSwift (~> 4.1.2)
+  - SwiftDate (~> 4.0)
+  - SwiftLint (~> 0.25.0)
+  - SwiftyJSON (~> 4.0.0)
+  - TabPageViewController (from `https://github.com/no-iwamatsu-personize/TabPageViewController.git`, tag `0.3.2`)
+  - Toaster (~> 2.1.1)
+
+EXTERNAL SOURCES:
+  TabPageViewController:
+    :git: https://github.com/no-iwamatsu-personize/TabPageViewController.git
+    :tag: 0.3.2
+
+CHECKOUT OPTIONS:
+  TabPageViewController:
+    :git: https://github.com/no-iwamatsu-personize/TabPageViewController.git
+    :tag: 0.3.2
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
+  FSPagerView: 7515f63c424da71623d299d4fbbfb3dd884642ff
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TabPageViewController: e1fd8f87a1eb573da39b5c4eaedd9e8acdb14e0a
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 6ef59e06ce832bd7c9cb21456c486e3832805e86
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="ContentHeaderCell" customModule="softbank_prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAh-iG-7gB">
+                        <rect key="frame" x="20" y="135.5" width="338" height="1"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aX8-Pb-aK1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="osa-Fo-Wws"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcH-7w-Ynf">
+                        <rect key="frame" x="20" y="20" width="338" height="95"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="22"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rAh-iG-7gB" secondAttribute="bottom" id="6n2-PE-btm"/>
+                    <constraint firstAttribute="trailing" secondItem="tcH-7w-Ynf" secondAttribute="trailing" constant="20" id="DyM-Fc-idI"/>
+                    <constraint firstItem="tcH-7w-Ynf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="I6n-IA-bEe"/>
+                    <constraint firstItem="rAh-iG-7gB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IOP-W8-SDT"/>
+                    <constraint firstItem="rAh-iG-7gB" firstAttribute="top" secondItem="tcH-7w-Ynf" secondAttribute="bottom" constant="20.5" id="RAo-mc-F0u"/>
+                    <constraint firstAttribute="trailing" secondItem="rAh-iG-7gB" secondAttribute="trailing" constant="20" id="XJq-Be-KVo"/>
+                    <constraint firstItem="tcH-7w-Ynf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gmh-uQ-CR5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boarderView" destination="rAh-iG-7gB" id="JL1-7V-2zm"/>
+                <outlet property="titleLabel" destination="tcH-7w-Ynf" id="EW8-fW-ndp"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="-381.5"/>
+        </tableViewCell>
+    </objects>
+</document>

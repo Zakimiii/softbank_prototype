@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b5t-jE-u6E" customClass="TableHeaderView" customModule="softbank_prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-de-y6u">
+                    <rect key="frame" x="0.0" y="0.0" width="485" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xn-sI-XZi">
+                            <rect key="frame" x="20" y="16" width="445" height="13"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                            <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSA-vA-Ptj">
+                            <rect key="frame" x="20" y="0.0" width="465" height="1"/>
+                            <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="4z8-WG-wKF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-Rf-NQl">
+                            <rect key="frame" x="20" y="43" width="465" height="1"/>
+                            <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="g6j-Fy-xiA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5xn-sI-XZi" secondAttribute="trailing" constant="20" id="61s-nV-2MC"/>
+                        <constraint firstAttribute="trailing" secondItem="dCb-Rf-NQl" secondAttribute="trailing" id="6V3-aQ-mvP"/>
+                        <constraint firstAttribute="bottom" secondItem="dCb-Rf-NQl" secondAttribute="bottom" id="9BO-LU-dbF"/>
+                        <constraint firstAttribute="trailing" secondItem="fSA-vA-Ptj" secondAttribute="trailing" id="F05-DK-3ZD"/>
+                        <constraint firstItem="5xn-sI-XZi" firstAttribute="leading" secondItem="Khv-de-y6u" secondAttribute="leading" constant="20" id="HZf-I5-EPn"/>
+                        <constraint firstItem="fSA-vA-Ptj" firstAttribute="leading" secondItem="Khv-de-y6u" secondAttribute="leading" constant="20" id="N1x-OY-sQG"/>
+                        <constraint firstItem="5xn-sI-XZi" firstAttribute="centerY" secondItem="Khv-de-y6u" secondAttribute="centerY" id="c3o-zP-sOD"/>
+                        <constraint firstItem="fSA-vA-Ptj" firstAttribute="top" secondItem="Khv-de-y6u" secondAttribute="top" id="kg8-4J-vLl"/>
+                        <constraint firstItem="5xn-sI-XZi" firstAttribute="centerX" secondItem="Khv-de-y6u" secondAttribute="centerX" id="l9B-3w-DZj"/>
+                        <constraint firstItem="dCb-Rf-NQl" firstAttribute="leading" secondItem="Khv-de-y6u" secondAttribute="leading" constant="20" id="vJ7-CH-0nD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Khv-de-y6u" secondAttribute="bottom" id="DY1-7J-fSF"/>
+                <constraint firstAttribute="trailing" secondItem="Khv-de-y6u" secondAttribute="trailing" id="L02-pu-WVb"/>
+                <constraint firstItem="Khv-de-y6u" firstAttribute="top" secondItem="b5t-jE-u6E" secondAttribute="top" id="xst-Rd-dAY"/>
+                <constraint firstItem="Khv-de-y6u" firstAttribute="leading" secondItem="b5t-jE-u6E" secondAttribute="leading" id="z50-cf-AQZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nDm-WY-uTu"/>
+            <connections>
+                <outlet property="buttomBoaderView" destination="dCb-Rf-NQl" id="LFM-fw-fCD"/>
+                <outlet property="titleLabel" destination="5xn-sI-XZi" id="k81-bD-EiC"/>
+                <outlet property="topBoaderView" destination="fSA-vA-Ptj" id="Ca8-pM-K54"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="-23"/>
+        </view>
+    </objects>
+</document>

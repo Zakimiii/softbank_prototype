@@ -1,0 +1,50 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: <%= ENV['DB_ROOT_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  socket: /tmp/mysql.sock
+  host: <%= ENV['DB_HOST'] %>
+  database: <%= ENV['DB_SOFTBANK_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: <%= ENV['DB_ROOT_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  socket: /tmp/mysql.sock
+  database: <%= ENV['DB_SOFTBANK_TEST_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  charset:   utf8
+  collation: utf8_general_ci
+  reconnect: false
+  pool: 5
+  username: <%= ENV['DB_ROOT_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  socket: /tmp/mysql.sock
+  database: <%= ENV['DB_SOFTBANK_STAGING_NAME'] %>
+  pool: 10
+  socket: /tmp/mysql.sock
+  username: <%= ENV['DB_ROOT_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] %>
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  socket: /var/lib/mysql/mysql.sock
+  database: <%= ENV['DB_SOFTBANK_NAME'] %>
+  username: <%= ENV['DB_ROOT_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] %>

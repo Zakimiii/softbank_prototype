@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SingleProfileCell" customModule="softbank_prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tranp.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EZR-Ag-zvD">
+                        <rect key="frame" x="20" y="7" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="gev-MP-UCF"/>
+                            <constraint firstAttribute="width" constant="44" id="j3m-k1-3zm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テスト太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-pI-Xjh">
+                        <rect key="frame" x="84" y="7" width="161" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="FLv-cm-u9M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テスト太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMz-0w-uEu">
+                        <rect key="frame" x="84" y="35" width="161" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="aRy-LA-cDc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ1-Lq-wbU" customClass="FollowButton" customModule="softbank_prototype" customModuleProvider="target">
+                        <rect key="frame" x="245" y="13" width="55" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="4em-CD-cLP"/>
+                            <constraint firstAttribute="width" constant="55" id="sYK-Z0-OWQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xd-Fk-hDn">
+                        <rect key="frame" x="0.0" y="58.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="enL-KK-LNR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EZR-Ag-zvD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Ps-ye-eNY"/>
+                    <constraint firstItem="eZ1-Lq-wbU" firstAttribute="leading" secondItem="yMz-0w-uEu" secondAttribute="trailing" id="A13-CL-Icd"/>
+                    <constraint firstAttribute="bottom" secondItem="4Xd-Fk-hDn" secondAttribute="bottom" id="CAq-no-Dl5"/>
+                    <constraint firstItem="yMz-0w-uEu" firstAttribute="leading" secondItem="EZR-Ag-zvD" secondAttribute="trailing" constant="20" id="FHw-js-YWf"/>
+                    <constraint firstItem="EZR-Ag-zvD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JJS-9y-dJc"/>
+                    <constraint firstItem="4Xd-Fk-hDn" firstAttribute="top" secondItem="EZR-Ag-zvD" secondAttribute="bottom" constant="7.5" id="Mfe-d2-UdM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eZ1-Lq-wbU" secondAttribute="trailing" constant="4" id="Oaf-bB-Em8"/>
+                    <constraint firstItem="4Xd-Fk-hDn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SBl-Da-0SR"/>
+                    <constraint firstItem="eZ1-Lq-wbU" firstAttribute="leading" secondItem="hlX-pI-Xjh" secondAttribute="trailing" id="dEU-Dn-leh"/>
+                    <constraint firstItem="hlX-pI-Xjh" firstAttribute="leading" secondItem="EZR-Ag-zvD" secondAttribute="trailing" constant="20" id="iWa-ck-c6f"/>
+                    <constraint firstItem="eZ1-Lq-wbU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kQ8-I2-73V"/>
+                    <constraint firstAttribute="trailing" secondItem="4Xd-Fk-hDn" secondAttribute="trailing" id="lL8-SX-U1H"/>
+                    <constraint firstItem="yMz-0w-uEu" firstAttribute="bottom" secondItem="EZR-Ag-zvD" secondAttribute="bottom" id="mvS-mo-FCy"/>
+                    <constraint firstItem="hlX-pI-Xjh" firstAttribute="top" secondItem="EZR-Ag-zvD" secondAttribute="top" id="yD4-ES-mCI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boarderView" destination="4Xd-Fk-hDn" id="dm3-Iv-15a"/>
+                <outlet property="detailLabel" destination="yMz-0w-uEu" id="7qk-yk-1bp"/>
+                <outlet property="follewButton" destination="eZ1-Lq-wbU" id="5cF-ex-Kus"/>
+                <outlet property="nameLabel" destination="hlX-pI-Xjh" id="KC0-26-BQK"/>
+                <outlet property="profileImage" destination="EZR-Ag-zvD" id="kQL-44-nnP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tranp.jpeg" width="305" height="165"/>
+    </resources>
+</document>

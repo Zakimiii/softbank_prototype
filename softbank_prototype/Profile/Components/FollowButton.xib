@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowButton" customModule="softbank_prototype" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="KcN-95-L8y" id="AKQ-un-HL0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7v0-wd-9wc">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcN-95-L8y">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="32"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    <state key="normal" image="Following.png">
+                        <color key="titleColor" red="0.45098039220000002" green="0.61960784310000006" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="followedIcon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" image="Followed.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KcN-95-L8y" firstAttribute="top" secondItem="oKN-zt-gnY" secondAttribute="top" id="Q83-KZ-UNd"/>
+                <constraint firstItem="KcN-95-L8y" firstAttribute="bottom" secondItem="oKN-zt-gnY" secondAttribute="bottom" id="Wt1-L5-Ce3"/>
+                <constraint firstItem="KcN-95-L8y" firstAttribute="leading" secondItem="oKN-zt-gnY" secondAttribute="leading" id="dzY-ES-Gc3"/>
+                <constraint firstItem="KcN-95-L8y" firstAttribute="trailing" secondItem="oKN-zt-gnY" secondAttribute="trailing" id="hmw-o3-LRc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="oKN-zt-gnY"/>
+            <point key="canvasLocation" x="-53.5" y="-74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Followed.png" width="24" height="15"/>
+        <image name="Following.png" width="23" height="15"/>
+        <image name="followedIcon" width="24" height="15"/>
+    </resources>
+</document>

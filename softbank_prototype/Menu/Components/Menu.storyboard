@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Eh-0h-sBK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu Index View Controller-->
+        <scene sceneID="KBB-Wx-AGz">
+            <objects>
+                <viewController id="7Eh-0h-sBK" customClass="MenuIndexViewController" customModule="softbank_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cr4-6d-BzN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIS-N9-bKP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kfx-qx-4GU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="abs-pY-h7t">
+                                <rect key="frame" x="0.0" y="20" width="245" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="6Qn-FS-cWD"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NIS-N9-bKP" firstAttribute="bottom" secondItem="TNM-VS-lAq" secondAttribute="bottom" id="BfB-Tj-RH8"/>
+                            <constraint firstItem="NIS-N9-bKP" firstAttribute="leading" secondItem="TNM-VS-lAq" secondAttribute="leading" id="C8B-ie-Sc3"/>
+                            <constraint firstItem="NIS-N9-bKP" firstAttribute="top" secondItem="TNM-VS-lAq" secondAttribute="top" id="IFh-ij-uYZ"/>
+                            <constraint firstItem="abs-pY-h7t" firstAttribute="top" secondItem="TNM-VS-lAq" secondAttribute="top" id="n7a-pi-fny"/>
+                            <constraint firstItem="abs-pY-h7t" firstAttribute="leading" secondItem="TNM-VS-lAq" secondAttribute="leading" id="q1E-li-2BG"/>
+                            <constraint firstItem="abs-pY-h7t" firstAttribute="bottom" secondItem="TNM-VS-lAq" secondAttribute="bottom" id="qYJ-4W-tq4"/>
+                            <constraint firstItem="NIS-N9-bKP" firstAttribute="trailing" secondItem="TNM-VS-lAq" secondAttribute="trailing" id="qf3-39-Ph0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TNM-VS-lAq"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="abs-pY-h7t" id="71j-rs-Bog"/>
+                        <outlet property="tableViewWidth" destination="6Qn-FS-cWD" id="Dec-5C-DNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sk-HV-ZDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666.39999999999998" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+</document>

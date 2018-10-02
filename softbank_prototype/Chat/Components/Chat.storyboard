@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tb1-kd-hUY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="cjM-eZ-WHR">
+            <objects>
+                <viewController id="tb1-kd-hUY" customClass="ChatViewController" customModule="softbank_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ez-xY-Uql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzT-Bj-Hhx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eL-bp-XSg" customClass="PlusAction" customModule="softbank_prototype" customModuleProvider="target">
+                                        <rect key="frame" x="286" y="558" width="64" height="64"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="FUc-4C-REp"/>
+                                            <constraint firstAttribute="width" constant="64" id="sZ1-Z6-yGT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1eL-bp-XSg" secondAttribute="bottom" constant="25" id="ZER-V8-2Oc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1eL-bp-XSg" secondAttribute="trailing" constant="25" id="uBp-43-zl1"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pua-S4-D2E">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="dc5-pi-fsL" kind="embed" id="1e3-3S-0uP"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-HN-vpX">
+                                <rect key="frame" x="0.0" y="20" width="0.0" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="lfW-DO-5qO"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="bAU-Ah-dTc" kind="embed" id="BT4-8b-ttz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tzT-Bj-Hhx" firstAttribute="leading" secondItem="dYT-VD-Vsw" secondAttribute="leading" id="0WI-1m-UF4"/>
+                            <constraint firstItem="tzT-Bj-Hhx" firstAttribute="bottom" secondItem="dYT-VD-Vsw" secondAttribute="bottom" id="AcQ-Oi-1Ov"/>
+                            <constraint firstItem="tzT-Bj-Hhx" firstAttribute="top" secondItem="dYT-VD-Vsw" secondAttribute="top" id="G2V-fy-wZz"/>
+                            <constraint firstItem="pua-S4-D2E" firstAttribute="trailing" secondItem="dYT-VD-Vsw" secondAttribute="trailing" id="INT-yj-MJ7"/>
+                            <constraint firstItem="pua-S4-D2E" firstAttribute="leading" secondItem="dYT-VD-Vsw" secondAttribute="leading" id="RpZ-DH-dD1"/>
+                            <constraint firstItem="tzT-Bj-Hhx" firstAttribute="trailing" secondItem="dYT-VD-Vsw" secondAttribute="trailing" id="a7K-vK-DYk"/>
+                            <constraint firstItem="n2h-HN-vpX" firstAttribute="bottom" secondItem="dYT-VD-Vsw" secondAttribute="bottom" id="clb-Bj-Bq7"/>
+                            <constraint firstItem="pua-S4-D2E" firstAttribute="top" secondItem="dYT-VD-Vsw" secondAttribute="top" id="fpx-El-P3N"/>
+                            <constraint firstItem="n2h-HN-vpX" firstAttribute="top" secondItem="dYT-VD-Vsw" secondAttribute="top" id="hKz-6D-YHT"/>
+                            <constraint firstItem="n2h-HN-vpX" firstAttribute="leading" secondItem="dYT-VD-Vsw" secondAttribute="leading" id="xnJ-v6-sHp"/>
+                            <constraint firstItem="pua-S4-D2E" firstAttribute="bottom" secondItem="dYT-VD-Vsw" secondAttribute="bottom" id="ydE-bR-Vs4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dYT-VD-Vsw"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionView" destination="1eL-bp-XSg" id="v7M-BC-tIl"/>
+                        <outlet property="containerView" destination="tzT-Bj-Hhx" id="1Mr-Z5-clp"/>
+                        <outlet property="menuContainerView" destination="n2h-HN-vpX" id="UR7-jd-2eh"/>
+                        <outlet property="menuContainerViewWidth" destination="lfW-DO-5qO" id="25f-bW-GlC"/>
+                        <outlet property="searchContainerView" destination="pua-S4-D2E" id="XRs-yJ-mZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXy-5V-Zzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.59999999999999" y="202.84857571214394"/>
+        </scene>
+        <!--Chat New View Controller-->
+        <scene sceneID="BW5-U7-mks">
+            <objects>
+                <viewController restorationIdentifier="ChatNewViewController" storyboardIdentifier="ChatNewViewController" id="cvM-Yf-PK2" customClass="ChatNewViewController" customModule="softbank_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Urc-Cx-GIh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xt4-Gh-Izx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmW-q2-V5I" customClass="ChatRoomInputView" customModule="softbank_prototype" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9KK-Y1-9QU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xt4-Gh-Izx" firstAttribute="bottom" secondItem="XxS-ej-CuX" secondAttribute="bottom" id="7Jh-rh-sph"/>
+                            <constraint firstItem="Xt4-Gh-Izx" firstAttribute="leading" secondItem="XxS-ej-CuX" secondAttribute="leading" id="Bp1-8T-YDh"/>
+                            <constraint firstItem="Xt4-Gh-Izx" firstAttribute="top" secondItem="XxS-ej-CuX" secondAttribute="top" id="DIp-Xh-t38"/>
+                            <constraint firstItem="rmW-q2-V5I" firstAttribute="trailing" secondItem="XxS-ej-CuX" secondAttribute="trailing" id="lUA-pZ-yhs"/>
+                            <constraint firstItem="rmW-q2-V5I" firstAttribute="bottom" secondItem="XxS-ej-CuX" secondAttribute="bottom" id="mUl-YF-FQg"/>
+                            <constraint firstItem="rmW-q2-V5I" firstAttribute="leading" secondItem="XxS-ej-CuX" secondAttribute="leading" id="vVh-d4-gYY"/>
+                            <constraint firstItem="Xt4-Gh-Izx" firstAttribute="trailing" secondItem="XxS-ej-CuX" secondAttribute="trailing" id="yB1-aU-Cws"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XxS-ej-CuX"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatRoomInputView" destination="rmW-q2-V5I" id="NIc-xS-war"/>
+                        <outlet property="chatRoomInputViewBottom" destination="mUl-YF-FQg" id="lb9-m4-USl"/>
+                        <outlet property="tableView" destination="Xt4-Gh-Izx" id="T4a-4S-D4k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh4-0k-PHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575.2" y="202.84857571214394"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="qgr-LV-JIa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="bAU-Ah-dTc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPj-HO-iff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="340"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="c3N-Jw-yae">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="dc5-pi-fsL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5D3-vp-vFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="434"/>
+        </scene>
+    </scenes>
+</document>

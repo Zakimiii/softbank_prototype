@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselView" customModule="softbank_prototype" customModuleProvider="target">
+            <connections>
+                <outlet property="gradientView" destination="lRn-FM-ObY" id="qHS-Jl-rdC"/>
+                <outlet property="pageControl" destination="2mZ-xr-yTp" id="g5q-Qk-Xy3"/>
+                <outlet property="pagerView" destination="o9q-Rs-XbJ" id="ox8-fK-Pnh"/>
+                <outlet property="titleLabel" destination="MGS-4G-PVB" id="T09-EU-5H3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" restorationIdentifier="pagerView" translatesAutoresizingMaskIntoConstraints="NO" id="o9q-Rs-XbJ" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRn-FM-ObY">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今話題の投稿" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGS-4G-PVB">
+                            <rect key="frame" x="20" y="162" width="353" height="16"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MGS-4G-PVB" secondAttribute="bottom" constant="20" id="GI3-0H-fen"/>
+                        <constraint firstItem="MGS-4G-PVB" firstAttribute="leading" secondItem="lRn-FM-ObY" secondAttribute="leading" constant="20" id="uK8-Xs-03s"/>
+                        <constraint firstAttribute="trailing" secondItem="MGS-4G-PVB" secondAttribute="trailing" constant="20" id="ywj-H1-K0j"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mZ-xr-yTp" customClass="FSPageControl" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="198" width="393" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="W7x-pF-Wlb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2mZ-xr-yTp" secondAttribute="trailing" id="6VN-Ec-ttk"/>
+                <constraint firstItem="2mZ-xr-yTp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BX9-Gd-nkY"/>
+                <constraint firstItem="2mZ-xr-yTp" firstAttribute="top" secondItem="o9q-Rs-XbJ" secondAttribute="bottom" id="Hil-Rd-xUO"/>
+                <constraint firstItem="o9q-Rs-XbJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L1E-9I-su7"/>
+                <constraint firstItem="2mZ-xr-yTp" firstAttribute="top" secondItem="lRn-FM-ObY" secondAttribute="bottom" id="Rs6-kK-zja"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lRn-FM-ObY" secondAttribute="trailing" id="Zio-k6-izC"/>
+                <constraint firstItem="lRn-FM-ObY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dNl-jO-yDq"/>
+                <constraint firstItem="o9q-Rs-XbJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dws-Zb-E5a"/>
+                <constraint firstItem="2mZ-xr-yTp" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="iLz-OA-p0E"/>
+                <constraint firstItem="lRn-FM-ObY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="otW-D7-HV7"/>
+                <constraint firstItem="o9q-Rs-XbJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qhi-jm-hQM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="74.5" y="58"/>
+        </view>
+    </objects>
+</document>

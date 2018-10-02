@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SocialHeaderView" customModule="softbank_prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hr-aG-3NG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFo-Ha-42a">
+                            <rect key="frame" x="20" y="16" width="280" height="18"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yFo-Ha-42a" secondAttribute="trailing" constant="20" id="0hb-to-oLq"/>
+                        <constraint firstItem="yFo-Ha-42a" firstAttribute="leading" secondItem="0hr-aG-3NG" secondAttribute="leading" constant="20" id="7Al-ys-qSx"/>
+                        <constraint firstItem="yFo-Ha-42a" firstAttribute="centerY" secondItem="0hr-aG-3NG" secondAttribute="centerY" id="eLU-O4-5vC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0hr-aG-3NG" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="c2X-fS-BtD"/>
+                <constraint firstItem="0hr-aG-3NG" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="h2t-J9-EUA"/>
+                <constraint firstItem="0hr-aG-3NG" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="tJM-SM-MpA"/>
+                <constraint firstItem="0hr-aG-3NG" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="tZ3-9Q-3Ez"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="titleLabel" destination="yFo-Ha-42a" id="eff-iu-dD5"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
